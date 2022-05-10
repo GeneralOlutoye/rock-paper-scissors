@@ -1,6 +1,4 @@
 body{
-    /* background-color:rgb(161, 218, 220); */
-    
     background-image: url(/img/SoftwareDev5.avif);
     background-size: cover;
     background-position: 0%;
@@ -11,8 +9,6 @@ body{
     height: 90vh;
 }
 .section{
-    /* width: 27%; */
-    /* border: 2px solid blue; */
     background-color: rgba(0, 0, 0, 0.547);
     box-shadow: 1px 1px 3px 3px silver;
     border-radius: 15px;
@@ -34,12 +30,13 @@ body{
 }
 #start{
     margin-top: 1em;
-    padding: 10px 25px;
+    padding: 7px 18px;
     border-radius: 10px;
     border: none;
     background-color: inherit;
     color: white;
 }
+
 h1{text-align: center;}
 
 button{
