@@ -1,7 +1,7 @@
 body{
     /* background-color:rgb(161, 218, 220); */
     
-    background-image: url(/img/SoftwareDev5.avif);
+    background-image: url(/img/1_FEcr9_owB5KplrClDpRenA\ \(1\).png);
     background-size: cover;
     background-position: 0%;
     display: flex;
@@ -11,13 +11,12 @@ body{
     height: 90vh;
 }
 .section{
-    /* width: 27%; */
-    /* border: 2px solid blue; */
+    /* width: 100%; */
     background-color: rgba(0, 0, 0, 0.547);
     box-shadow: 1px 1px 3px 3px silver;
     border-radius: 15px;
     height: 30rem;
-    padding: 2px 15px;
+    padding: 0px 15px;
 }
 .head   {
     text-align: center;
@@ -48,7 +47,7 @@ button{
     font-weight: bolder;
     font-size: medium;
     border: none;
-    margin: 2px;
+    margin: auto;
     background-color: inherit;
     box-shadow: 0px 0px 3px 1px white;
     color: white;
