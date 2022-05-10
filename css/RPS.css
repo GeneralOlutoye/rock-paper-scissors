@@ -1,11 +1,5 @@
 body{
-<<<<<<< HEAD
-    background-image: url(/img/SoftwareDev5.avif);
-=======
-    /* background-color:rgb(161, 218, 220); */
-    
     background-image: url(/img/1_FEcr9_owB5KplrClDpRenA\ \(1\).png);
->>>>>>> c55c3b35d1b5e1cc89df91fbc2b8f37568da1f53
     background-size: cover;
     background-position: 0%;
     display: flex;
@@ -15,10 +9,6 @@ body{
     height: 90vh;
 }
 .section{
-<<<<<<< HEAD
-=======
-    /* width: 100%; */
->>>>>>> c55c3b35d1b5e1cc89df91fbc2b8f37568da1f53
     background-color: rgba(0, 0, 0, 0.547);
     box-shadow: 1px 1px 3px 3px silver;
     border-radius: 15px;
