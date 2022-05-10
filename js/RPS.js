@@ -1,4 +1,4 @@
-let playerName, display, computer, startBtn, player, player1, player2, 
+let PlayerName, display, computer, startBtn, player, player1, player2, 
 result,rock, papper, scissors;
 
 startBtn= document.getElementById('start')
@@ -6,11 +6,9 @@ result= document.getElementById('result')
 rock= document.getElementById('rock')
 papper= document.getElementById('papper')
 scissors= document.getElementById('scissors')
-playerName= document.getElementById('playerName')
-
 
 startBtn.addEventListener('click', ()=> {
-    let name= playerName.value
+    let name= PlayerName.value
     player= name.toUpperCase()
     player1.textContent= `${player}:`
 })
@@ -21,7 +19,3 @@ rock.addEventListener('click', ()=> {
     result.textContent= checkWinner()
     computerText.textContent= `computer : ${computer}`
 })
-
-// papper.addEventListener('click', ()=>{
-    
-// })
