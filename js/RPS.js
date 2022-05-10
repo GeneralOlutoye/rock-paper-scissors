@@ -1,24 +1,39 @@
-let PlayerName, display, computer, startBtn, player, player1, 
+let computer, startBtn, player, player1, 
 result,choiceBtn;
 
-startBtn= document.getElementById('start')
-result= document.getElementById('result')
-choiceBtn= document.querySelectorAll('choiceBtn')
-
-startBtn.addEventListener('click', ()=> {
-    let name= PlayerName.value
-    player= name.toUpperCase()
-    player1.textContent= `${player}:`
-})
+player1= document.querySelector('#player1')
+computer= document.querySelector('#player2')
+choiceBtn= document.querySelectorAll('.choiceBtn')
 
 choiceBtn.forEach(button => button.addEventListener('click', ()=> {
     player= button.textContent;
     computerTurn()
-    player1.textContent= `${player}: ${display}`  
-    result.textContent= checkWinner()
-    computerText.textContent= `computer : ${computer}`
 }))
 
-computerTurn =>{
-    const randNum= Math.floor(Math.random()*3)+1
+function computerwork (){
+    const answer = Math.floor(Math.random()*3) +1;
+
+    if(answer == 1){
+        computer = "PAPER"
+    } 
+    else if (answer == 2){
+        computer = "SCISSORS"
+    }
+    else if (answer == 3){
+        computer = "ROCK"
+    }
+}
+function checkWinner() {
+    if(computer == player){
+        return "A TIE!";
+    }
+    else if(computer == "ROCK"){
+        return (player == "PAPER") ? "YOU WIIN!" :"YOU LOSE!"
+    }
+    else if(computer == "PAPER"){
+        return (player == "SCISSORS") ? "YOU WIIN!" :"YOU LOSE!"
+    }
+    else if(computer == "SCISSORS"){
+        return (player == "ROCK") ? "YOU WIIN!" :"YOU LOSE!"
+    }
 }
