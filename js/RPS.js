@@ -1,14 +1,21 @@
-let computer, startBtn, player, player1, 
-result,choiceBtn;
+// let computer, user, player, result, choiceBtn;
 
-player1= document.querySelector('#player1')
-computer= document.querySelector('#player2')
-choiceBtn= document.querySelectorAll('.choiceBtn')
+// // player= document.querySelector('#player')
+// computer= document.querySelector('#computer')
 
-choiceBtn.forEach(button => button.addEventListener('click', ()=> {
-    player= button.textContent;
-    computerTurn()
-}))
+// choiceBtn.forEach(button => button.addEventListener('click', ()=> {
+//     user= button.textContent;
+
+//     computerTurn()
+// }))
+
+let rock= document.getElementById('rock')
+
+rock.onclick= ()=>{
+    rock.value
+    document.getElementById('player').innerHTML= rock
+}
+
 
 function computerwork (){
     const answer = Math.floor(Math.random()*3) +1;
