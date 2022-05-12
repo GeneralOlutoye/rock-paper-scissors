@@ -9,11 +9,12 @@
 //     computerTurn()
 // }))
 
-let rock= document.getElementById('rock')
+let rock= document.querySelector('#rock')
+let player1
 
 rock.onclick= ()=>{
-    rock.value
-    document.getElementById('player').innerHTML= rock
+    player1= rock.innerHTML
+    document.getElementById('player').innerHTML= player1
 }
 
 
