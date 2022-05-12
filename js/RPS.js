@@ -1,20 +1,14 @@
-// let computer, user, player, result, choiceBtn;
+let computer, startBtn, player, result,choiceBtn;
 
-// // player= document.querySelector('#player')
-// computer= document.querySelector('#computer')
-
-// choiceBtn.forEach(button => button.addEventListener('click', ()=> {
-//     user= button.textContent;
-
-//     computerTurn()
-// }))
+result= document.getElementById('result')
+choiceBtn= document.querySelectorAll('choiceBtn')
 
 let rock= document.querySelector('#rock')
 let player1
 
 rock.onclick= ()=>{
     player1= rock.innerHTML
-    document.getElementById('player').innerHTML= player1
+    document.getElementById('player1').innerHTML= player1
 }
 
 
