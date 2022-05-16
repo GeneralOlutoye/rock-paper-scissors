@@ -8,7 +8,7 @@ let player1
 
 rock.onclick= ()=>{
     player1= rock.innerHTML
-    document.getElementById('player1').innerHTML= player1
+    document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
 }
 
 
