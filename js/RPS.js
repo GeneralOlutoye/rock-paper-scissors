@@ -1,15 +1,27 @@
 let computer, startBtn, player, result,choiceBtn;
 
 result= document.getElementById('result')
-choiceBtn= document.querySelectorAll('choiceBtn')
+choiceBtn= document.querySelectorAll('#choiceBtn')
 
 let rock= document.querySelector('#rock')
 let player1
 
-rock.onclick= ()=>{
-    player1= rock.innerHTML
-    document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
-}
+// document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
+
+choiceBtn.addEventListener('click', (i)=>{
+    i= rock.innerHTML
+    switch(i){
+        case 'ROCK':
+            document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
+            break;
+        case 'PAPER':
+            document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
+            break;
+        case 'SCISSORS':
+            document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
+            break;
+    }
+})
 
 
 function computerwork (){
