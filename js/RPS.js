@@ -1,29 +1,40 @@
-let computer, startBtn, player, result,choiceBtn;
+// let player= document.getElementById('player1')
+let p
+// document.getElementById('rock').onclick= ()=>{
+//     p= rock.innerHTML
+//     document.getElementById('player1').innerHTML= `PLAYER: ${p}`
+// }
 
-result= document.getElementById('result')
-choiceBtn= document.querySelectorAll('#choiceBtn')
-
-let rock= document.querySelector('#rock')
-let player1
-
-// document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
-
-choiceBtn.addEventListener('click', (i)=>{
-    i= rock.innerHTML
-    switch(i){
+document.querySelectorAll('.choiceBtn').onclick= ()=>{
+    p= choiceBtn.value
+    switch(p){
         case 'ROCK':
-            document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
+            document.getElementById('player1').innerHTML= `PLAYER: ${p}`
             break;
-        case 'PAPER':
-            document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
+        case 'PAPER':  
+            document.getElementById('player').innerHTML= `PLAYER: ${player}`
             break;
         case 'SCISSORS':
-            document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
+            document.getElementById('player').innerHTML= `PLAYER: ${player}`
             break;
-    }
-})
+    }  
+}
+
+// choiceBtn.addEventListener('click',()=>{
+//     switch(player1){
+//         case 'ROCK':
+//             document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
+//             break;
+//         case 'PAPER':
+//             document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
+//             break;
+//         case 'SCISSORS':
+//             document.getElementById('player1').innerHTML= `PLAYER: ${player1}`
+//             break;
+//     }
 
 
+// })
 function computerwork (){
     const answer = Math.floor(Math.random()*3) +1;
 
